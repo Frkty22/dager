@@ -24,7 +24,7 @@ a = Analysis(
     hooksconfig={},
     runtime_hooks=[],
     # استبعاد مكتبات الواجهة الرسومية المتعارضة لضمان بناء نظيف
-    excludes=['PyQt5', 'PySide6'],
+    excludes=[],
     noarchive=False,
     optimize=0,
 )
@@ -40,7 +40,7 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     # أهم تعديل: إيقاف UPX لمنع تلف البرنامج
-    upx=False,
+    upx=True,
     runtime_tmpdir=None,
     console=False,
     disable_windowed_traceback=False,
