@@ -8,7 +8,7 @@ a = Analysis(
     ['DarkForge_Master_Pipeline.py'],
     pathex=[],
     binaries=[],
-    datas=[('bahh.pt', '.'), ('best2.pt', '.'), ('cels.pt', '.'), ('digit_recognition_model.h5', '.'), ('lasst.pt', '.'), ('lessat2.pt', '.')],
+    datas=[('bahh.pt', '.'), ('best2.pt', '.'), ('cels.pt', '.'), ('digit_recognition_model.h5', '.'), ('lasst.pt', '.')],
     hiddenimports=['easyocr'],
     hookspath=[],
     hooksconfig={},
