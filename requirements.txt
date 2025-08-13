@@ -7,3 +7,4 @@ easyocr
 requests
 pandas
 openpyxl
+pyinstaller
