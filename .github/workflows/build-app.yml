@@ -9,12 +9,12 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4 # تم تحديث هذا أيضًا للإصدار الأحدث
+      - uses: actions/checkout@v4
         with:
           lfs: true
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v5 # تم تحديث هذا أيضًا للإصدار الأحدث
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -24,10 +24,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run PyInstaller
-        run: pyinstaller DarkForge_Master_Pipeline.spec
+        # تم تعديل هذا السطر ليصبح أكثر موثوقية
+        run: python -m PyInstaller DarkForge_Master_Pipeline.spec
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4 # هذا هو التعديل الأهم
+        uses: actions/upload-artifact@v4
         with:
           name: windows-application
           path: dist/
